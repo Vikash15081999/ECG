@@ -7,7 +7,7 @@ jobs:
     name: Build for Android
     runs-on: ubuntu-16.04
     env:
-        working-directory:./Test_app
+        working-directory: ./Test_app
       
 
     steps:
