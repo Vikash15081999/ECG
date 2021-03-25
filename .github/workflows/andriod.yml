@@ -16,7 +16,7 @@ build-android:
       uses: ArtemSBulgakov/buildozer-action@v1
       id: buildozer
       with:
-        workdir: Test_app
+        workdir: https://github.com/Vikash15081999/ECG/tree/main/Test_app
         buildozer_version: stable
 
     - name: Upload artifacts
