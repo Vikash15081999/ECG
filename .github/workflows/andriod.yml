@@ -6,6 +6,9 @@ jobs:
   build-android:
     name: Build for Android
     runs-on: ubuntu-16.04
+    env:
+        working-directory:./Test_app
+      
 
     steps:
       - name: Checkout
@@ -15,7 +18,7 @@ jobs:
         uses: ArtemSBulgakov/buildozer-action@v1
         id: buildozer
         with:
-          workdir: https://github.com/Vikash15081999/ECG/tree/main/Test_app
+          working-directory: ${{env.working-directory}}
           buildozer_version: stable
 
       - name: Upload artifacts
