@@ -18,7 +18,7 @@ jobs:
         uses: ArtemSBulgakov/buildozer-action@v1
         id: buildozer
         with:
-          working-directory: ${{env.working-directory}}
+          workdir: ${{env.working-directory}}
           buildozer_version: stable
 
       - name: Upload artifacts
